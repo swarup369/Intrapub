@@ -1,0 +1,750 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Space+Grotesk:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed-dim":"#4edea3","on-primary-container":"#00422b","tertiary-fixed-dim":"#4cd7f6","inverse-primary":"#006c49","on-surface":"#dfe2f1","surface-tint":"#4edea3","on-tertiary":"#003640","surface-container-low":"#171b26","on-surface-variant":"#bbcabf","surface-container":"#1c1f2a","surface-container-highest":"#313540","on-error":"#690005","on-error-container":"#ffdad6","tertiary":"#4cd7f6","inverse-on-surface":"#2c303b","surface-container-high":"#262a35","secondary-fixed":"#ffdad7","error-container":"#93000a","on-tertiary-fixed-variant":"#004e5c","on-secondary-fixed":"#410004","outline":"#86948a","secondary-container":"#a40217","on-tertiary-container":"#003f4b","primary-fixed":"#6ffbbe","surface":"#0f131d","secondary":"#ffb3ad","inverse-surface":"#dfe2f1","tertiary-fixed":"#acedff","on-primary":"#003824","on-primary-fixed":"#002113","on-secondary-container":"#ffaea8","primary-container":"#10b981","surface-container-lowest":"#0a0e18","surface-dim":"#0f131d","on-secondary":"#68000a","secondary-fixed-dim":"#ffb3ad","on-primary-fixed-variant":"#005236","on-background":"#dfe2f1","outline-variant":"#3c4a42","surface-variant":"#313540","tertiary-container":"#00b2d0","background":"#0f131d","on-tertiary-fixed":"#001f26","error":"#ffb4ab","primary":"#4edea3","surface-bright":"#353944","on-secondary-fixed-variant":"#930013"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{gutter:"0.5rem","space-sm":"0.25rem","space-lg":"0.75rem",margin:"0.75rem","space-xl":"1rem","space-xs":"0.125rem","space-md":"0.5rem"},fontFamily:{"data-mono-lg":["JetBrains Mono"],"headline-lg":["Space Grotesk"],"body-sm":["Geist"],"headline-xl-mobile":["Space Grotesk"],"headline-xl":["Space Grotesk"],"label-caps":["Space Grotesk"],"data-mono-md":["JetBrains Mono"],"data-display":["JetBrains Mono"],"headline-md":["Space Grotesk"],"body-lg":["Geist"],"body-md":["Geist"],"data-mono-sm":["JetBrains Mono"]},fontSize:{"data-mono-lg":["14px",{lineHeight:"18px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["20px",{lineHeight:"26px",letterSpacing:"-0.01em",fontWeight:"600"}],"body-sm":["11px",{lineHeight:"14px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-xl-mobile":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-xl":["28px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-caps":["10px",{lineHeight:"12px",letterSpacing:"0.08em",fontWeight:"700"}],"data-mono-md":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"500"}],"data-display":["24px",{lineHeight:"28px",letterSpacing:"-0.03em",fontWeight:"600"}],"headline-md":["16px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"600"}],"body-lg":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"500"}],"body-md":["12px",{lineHeight:"16px",letterSpacing:"0em",fontWeight:"400"}],"data-mono-sm":["10px",{lineHeight:"12px",letterSpacing:"0.02em",fontWeight:"500"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 flex flex-col bg-surface-container-lowest/95 backdrop-blur-md"><div class="h-7 w-full px-margin bg-surface-container-lowest flex items-center justify-between overflow-x-auto select-none"><div class="flex items-center gap-space-xl shrink-0"><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm"><span class="text-on-surface-variant font-label-caps text-label-caps uppercase">NIFTY 50</span><span class="text-on-surface font-semibold">24,360.50</span><span class="text-primary flex items-center">+84.20 (+0.35%)</span></div><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm"><span class="text-on-surface-variant font-label-caps text-label-caps uppercase">BANKNIFTY</span><span class="text-on-surface font-semibold">51,820.10</span><span class="text-primary flex items-center">+210.45 (+0.41%)</span></div><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm"><span class="text-on-surface-variant font-label-caps text-label-caps uppercase">FINNIFTY</span><span class="text-on-surface font-semibold">23,140.80</span><span class="text-primary flex items-center">+45.60 (+0.20%)</span></div><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm"><span class="text-on-surface-variant font-label-caps text-label-caps uppercase">INDIA VIX</span><span class="text-on-surface font-semibold">12.84</span><span class="text-error flex items-center">-3.12%</span></div><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm"><span class="text-on-surface-variant font-label-caps text-label-caps uppercase">GIFT NIFTY</span><span class="text-on-surface font-semibold">24,395.00</span><span class="text-primary flex items-center">+92.00</span></div></div><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="">NSE FEED: CONNECTED (1s)</span></div><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm bg-surface-container-high px-space-sm py-space-xs rounded"><span class="text-tertiary">MARKET:</span><span class="text-on-surface font-semibold">REGULAR (OPEN)</span></div></div></div><div class="h-12 w-full px-margin bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Apex Quant NSE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V3BJv1Luw0bKsKvCwY-yAYa_pwfxqd53X2zm85AHKl5rJQUzCHLyfAauFFTVFigDFlstLBnkxRsOVsK-i1gA90cr37NYZTmYDnOuXIAiYrEz02OfJe4MlWLDqFR2aENDX6NLTMED5tGKKufK29jKW3gMfl2JWPpgDCRHq80ho3IC45eKGo4elMZW5hMMlkasLn1AZNNDQaXF5MsNz_aTttA4JkvumHDXqJNNXgcTvVWBzoHT3yWyAmfqg"><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight font-bold text-on-surface">APEX QUANT</span><span class="font-label-caps text-label-caps uppercase text-primary -mt-1">NSE DERIVATIVES TERMINAL</span></div></div><nav class="flex items-center gap-space-xs pl-space-md" data-active-classes="bg-surface-container-high text-primary font-bold shadow-sm"><a aria-current="page" class="px-space-md py-space-sm rounded uppercase transition-colors bg-surface-container-high text-primary font-bold shadow-sm" data-path="intraday-research-and-atm-model" href="#">Intraday Research &amp; ATM Model</a><a class="px-space-md py-space-sm rounded font-label-caps text-label-caps uppercase transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-path="live-option-chain" href="#">Live Option Chain</a><a class="px-space-md py-space-sm rounded font-label-caps text-label-caps uppercase transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-path="oi-buildup-matrix" href="#">OI Buildup Matrix</a><a class="px-space-md py-space-sm rounded font-label-caps text-label-caps uppercase transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-path="multi-strike-pcr" href="#">Multi-Strike PCR</a><a class="px-space-md py-space-sm rounded font-label-caps text-label-caps uppercase transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-path="strategy-builder" href="#">Strategy Builder</a><a class="px-space-md py-space-sm rounded font-label-caps text-label-caps uppercase transition-colors text-on-surface-variant hover:text-on-surface hover:bg-surface-container" data-path="terminal-settings" href="#">Settings</a></nav></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded font-data-mono-sm text-data-mono-sm text-on-surface-variant cursor-pointer hover:bg-surface-container-high"><span class="material-symbols-outlined text-[14px] text-tertiary">sync</span><span class="">REFRESH:</span><span class="text-primary font-bold">3s</span></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded font-data-mono-sm text-data-mono-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="text-on-surface-variant">BRIDGE:</span><span class="text-on-surface font-semibold">NSE India Live v2.4</span></div><div class="flex items-center bg-surface-container px-space-sm py-space-xs rounded font-data-mono-sm text-data-mono-sm text-on-surface-variant cursor-pointer hover:text-on-surface"><span class="material-symbols-outlined text-[16px] text-primary">notifications_active</span></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded font-data-mono-sm text-data-mono-sm cursor-pointer hover:bg-surface-container-high"><span class="text-on-surface-variant uppercase font-label-caps text-label-caps">EXP:</span><span class="text-tertiary font-bold">24-OCT-2024 (Weekly)</span><span class="material-symbols-outlined text-[14px] text-on-surface-variant">arrow_drop_down</span></div><div class="flex items-center gap-space-xs bg-surface-container-high px-space-sm py-space-xs rounded font-data-mono-sm text-data-mono-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="text-on-surface font-semibold">Zerodha Multi-API</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="h-7 w-full px-margin bg-surface-container flex items-center justify-between text-body-sm font-body-sm"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm"><span class="text-on-surface-variant">ATM STRIKE:</span><span class="text-tertiary font-bold">24,350 CE/PE</span></div><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm"><span class="text-on-surface-variant">PCR (TOTAL):</span><span class="text-primary font-bold">1.18 (BULLISH ACCUMULATION)</span></div><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm"><span class="text-on-surface-variant">MAX PAIN:</span><span class="text-on-surface font-semibold">24,300</span></div><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm"><span class="text-on-surface-variant">STRADDLE PREMIUM:</span><span class="text-on-surface font-semibold">184.40 pts</span></div></div><div class="flex items-center gap-space-md font-data-mono-sm text-data-mono-sm"><span class="text-on-surface-variant">HIGH OI RESISTANCE:</span><span class="text-error font-semibold">24,500 CE (1.24 Cr)</span><span class="text-outline-variant">|</span><span class="text-on-surface-variant">MAX OI SUPPORT:</span><span class="text-primary font-semibold">24,200 PE (1.42 Cr)</span></div></div></header><aside class="fixed left-0 top-[6.5rem] bottom-0 w-56 bg-surface-container-lowest z-40 flex flex-col py-space-md select-none"><div class="px-space-md pb-space-sm flex items-center justify-between"><span class="font-label-caps text-label-caps uppercase text-on-surface-variant">RADAR VIEWPORTS</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">tune</span></div><nav class="flex-1 px-space-sm space-y-space-xs" data-active-classes="bg-surface-container-high text-primary font-bold"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded transition-all bg-surface-container-high text-primary font-bold" data-path="intraday-research-and-atm-model" href="#"><span class="material-symbols-outlined text-[18px]">candlestick_chart</span>ATM Horizon Matrix</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="live-option-chain" href="#"><span class="material-symbols-outlined text-[18px]">reorder</span>Bilateral Chain</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="oi-buildup-matrix" href="#"><span class="material-symbols-outlined text-[18px]">bar_chart</span>OI Heatmap Delta</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="multi-strike-pcr" href="#"><span class="material-symbols-outlined text-[18px]">speed</span>PCR Oscillators</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="strategy-builder" href="#"><span class="material-symbols-outlined text-[18px]">architecture</span>Payoff Simulation</a></nav><div class="px-space-md pt-space-sm bg-surface-container-low mx-space-sm rounded p-space-sm"><div class="font-label-caps text-label-caps uppercase text-on-surface-variant mb-space-xs">EXECUTION SLOTS</div><div class="flex items-center justify-between font-data-mono-sm text-data-mono-sm"><span class="text-on-surface">LOT SIZE:</span><span class="text-tertiary">25 NIFTY</span></div><div class="flex items-center justify-between font-data-mono-sm text-data-mono-sm"><span class="text-on-surface">ALGO STATUS:</span><span class="text-primary">ACTIVE (ARMED)</span></div></div></aside><div class="pl-56"><main class="relative pt-[6.5rem] min-h-screen bg-surface w-full p-margin"><div class="flex flex-col w-full space-y-space-md select-none pb-space-xl">
+<!-- TOP CONTROL & PARAMETER BAR (Institutional Ribbon) -->
+<section class="w-full bg-surface-container-low rounded-xl p-space-md shadow-md flex flex-wrap items-center justify-between gap-space-md">
+<!-- Left: Symbol Selector & Spot Feeds -->
+<div class="flex items-center flex-wrap gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-sm rounded">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">UNDERLYING</span>
+<div class="relative">
+<select class="bg-transparent font-headline-md text-headline-md text-primary font-bold pr-6 focus:outline-none cursor-pointer" id="underlyingSelect">
+<option class="bg-surface-container text-on-surface" value="NIFTY">NIFTY 50</option>
+<option class="bg-surface-container text-on-surface" value="BANKNIFTY">BANKNIFTY</option>
+<option class="bg-surface-container text-on-surface" value="FINNIFTY">FINNIFTY</option>
+<option class="bg-surface-container text-on-surface" value="MIDCPNIFTY">MIDCPNIFTY</option>
+</select>
+<span class="material-symbols-outlined text-[16px] text-primary pointer-events-none absolute right-0 top-1">expand_more</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs bg-surface-container px-space-md py-space-sm rounded">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">SPOT:</span>
+<span class="font-data-mono-lg text-data-mono-lg text-on-surface">24,362.40</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-bold">+86.10 (+0.35%)</span>
+</div>
+<div class="flex items-baseline gap-space-xs bg-surface-container px-space-md py-space-sm rounded">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">FUT:</span>
+<span class="font-data-mono-lg text-data-mono-lg text-on-surface">24,388.15</span>
+<span class="font-data-mono-sm text-data-mono-sm text-tertiary">PREM +25.75</span>
+</div>
+<!-- Computed ATM Strike Pill -->
+<div class="flex items-center gap-space-xs bg-tertiary-container/20 px-space-md py-space-sm rounded">
+<span class="material-symbols-outlined text-[16px] text-tertiary">radar</span>
+<span class="font-label-caps text-label-caps uppercase text-tertiary">AUTO ATM:</span>
+<span class="font-data-mono-lg text-data-mono-lg text-tertiary font-bold">24,350</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">(OFFSET: +12.40 pts)</span>
+</div>
+</div>
+<!-- Right: Expiry, Scraper Bridge & Refresh Controls -->
+<div class="flex items-center flex-wrap gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-sm rounded">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">event</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">EXPIRY:</span>
+<span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold">24-OCT-2024</span>
+<span class="bg-surface-container-high text-primary font-data-mono-sm text-data-mono-sm px-space-xs rounded">DTE: 1D</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-sm rounded">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">NSE SCRAPER:</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary" id="syncTimer">Synced 10m ago</span>
+</div>
+<button class="flex items-center gap-space-xs bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-caps text-label-caps uppercase px-space-md py-space-sm rounded shadow-sm transition-all active:scale-95" id="fetchBtn">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span class="">Fetch NSE Live</span>
+</button>
+<label class="flex items-center gap-space-xs cursor-pointer bg-surface-container px-space-md py-space-sm rounded">
+<input checked="" class="accent-primary w-3.5 h-3.5 cursor-pointer" id="autoRefreshToggle" type="checkbox">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">AUTO 30S</span>
+</label>
+</div>
+</section>
+<!-- THE PREDICTIVE DIRECTIONAL VERDICT CARD (Algorithmic Centerpiece) -->
+<section class="w-full bg-gradient-to-br from-surface-container-low via-surface-container to-surface-container-high rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<!-- Subtle high-tech ambient backglow -->
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 bg-tertiary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center relative z-10">
+<!-- Bias Gauge & Master Verdict -->
+<div class="lg:col-span-4 flex flex-col space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">psychology</span>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider">APEX ATM INTEL ENGINE v4.2</span>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm bg-primary/20 text-primary px-space-sm py-space-xs rounded font-bold">HIGH RELIABILITY</span>
+</div>
+<div class="space-y-space-xs">
+<div class="font-headline-xl text-headline-xl text-on-surface leading-tight tracking-tight">
+            STRONG BULLISH BREAKOUT
+          </div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Massive aggressive put accumulation at 24,300/24,350 strikes alongside systemic CE short covering across the morning session.
+          </p>
+</div>
+<!-- Confidence Gauge Bar -->
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-center justify-between font-data-mono-sm text-data-mono-sm">
+<span class="text-on-surface-variant font-label-caps uppercase">Probability above ATM (24,350)</span>
+<span class="text-primary font-bold">78.4%</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-lowest rounded-full overflow-hidden flex">
+<div class="h-full bg-primary rounded-full transition-all duration-700" style="width: 78.4%;"></div>
+</div>
+<div class="flex justify-between font-label-caps text-label-caps uppercase text-on-surface-variant">
+<span class="">BEAR RISK (21.6%)</span>
+<span class="">ALGO CONFIDENCE (+74/100)</span>
+</div>
+</div>
+</div>
+<!-- Actionable Trade Setup Box -->
+<div class="lg:col-span-5 bg-surface-container-lowest/80 backdrop-blur rounded-lg p-space-md shadow-md space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-caps text-label-caps uppercase text-tertiary">RECOMMENDED DERIVATIVE PLAY</span>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm bg-surface-container-high px-space-sm py-space-xs rounded text-on-surface">RISK:REWARD 1:2.4</span>
+</div>
+<div class="flex items-baseline justify-between">
+<div>
+<div class="font-headline-lg text-headline-lg text-primary font-bold">BULL CALL SPREAD / 24,350 CE BUY</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Execution: Enter on dips to 24,335 – 24,345 spot zone</div>
+</div>
+<button class="bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-caps text-label-caps uppercase px-space-md py-space-sm rounded font-bold transition-all shadow-sm">
+            ONE-CLICK ARM
+          </button>
+</div>
+<div class="grid grid-cols-3 gap-space-sm pt-space-xs font-data-mono-sm text-data-mono-sm">
+<div class="bg-surface-container p-space-sm rounded">
+<div class="text-on-surface-variant font-label-caps uppercase">ENTRY SPOT</div>
+<div class="text-on-surface font-bold text-data-mono-md font-data-mono-md">24,340.00</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<div class="text-error font-label-caps uppercase">STOP LOSS</div>
+<div class="text-error font-bold text-data-mono-md font-data-mono-md">24,300.00</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded">
+<div class="text-primary font-label-caps uppercase">TARGET (T1-T2)</div>
+<div class="text-primary font-bold text-data-mono-md font-data-mono-md">24,420 - 24,460</div>
+</div>
+</div>
+</div>
+<!-- Key Strike Range / Walls -->
+<div class="lg:col-span-3 flex flex-col justify-between space-y-space-md bg-surface-container-low/70 p-space-md rounded-lg">
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">ESTIMATED INTRADAY CORRIDOR</span>
+<div class="flex items-center justify-between bg-surface-container-lowest p-space-sm rounded">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-error">CE WALL (+2 STRIKE)</span>
+<div class="font-data-mono-lg text-data-mono-lg text-error font-bold">24,450</div>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-label-caps uppercase text-primary">PE BASE (-1 STRIKE)</span>
+<div class="font-data-mono-lg text-data-mono-lg text-primary font-bold">24,300</div>
+</div>
+</div>
+</div>
+<div class="space-y-space-xs font-data-mono-sm text-data-mono-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span class="">MAX PAIN:</span>
+<span class="text-on-surface font-bold">24,350 (Shifted +50)</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span class="">WEIGHTED 5-STRIKE PCR:</span>
+<span class="text-primary font-bold">1.38 (Bull Dominance)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Algorithmic Rationale Pills Ribbon -->
+<div class="mt-space-md pt-space-md flex flex-wrap gap-space-sm bg-surface-container-lowest/50 p-space-sm rounded-lg items-center">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant px-space-xs">RATIONALE:</span>
+<span class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm bg-primary/10 text-primary px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> Heavy PE Writing at 24,300 &amp; 24,350 (+6.4M Contracts)
+      </span>
+<span class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm bg-primary/10 text-primary px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-[14px]">offline_bolt</span> Call Unwinding Detected at 24,350 CE (-1.82M Contracts)
+      </span>
+<span class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm bg-tertiary/10 text-tertiary px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-[14px]">candlestick_chart</span> Straddle Decay Advantage favors upward squeeze
+      </span>
+<span class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm bg-surface-container-high text-on-surface px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-[14px]">tune</span> Delta Skew favors Calls (+0.54)
+      </span>
+</div>
+</section>
+<!-- 5-STRIKE ATM MATRIX [-2, -1, ATM, +1, +2] DEEP DIVE (Institutional Grid) -->
+<section class="w-full bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">view_timeline</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">5-STRIKE ATM HORIZON MATRIX [-2, -1, ATM, +1, +2]</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time Comparative Put/Call Skew, Strike-Specific PCR, and Intraday Open Interest Delta</p>
+</div>
+</div>
+<!-- View mode toggles -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest p-space-xs rounded">
+<button class="px-space-md py-space-xs rounded font-label-caps text-label-caps uppercase bg-surface-container text-primary font-bold">OI &amp; Volume</button>
+<button class="px-space-md py-space-xs rounded font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface">Option Greeks</button>
+<button class="px-space-md py-space-xs rounded font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface">Premium Decay</button>
+</div>
+</div>
+<!-- Matrix Cards / Strikes Ladder -->
+<div class="space-y-space-sm">
+<!-- STRIKE -2: 24,250 (Deep Support) -->
+<div class="bg-surface-container-lowest hover:bg-surface-container/60 transition-colors p-space-md rounded-lg flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- Call Wing Left -->
+<div class="w-full lg:w-5/12 flex items-center justify-between space-x-space-md">
+<div class="flex flex-col text-left">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">CALL OI</span>
+<span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold">1,840,250</span>
+<span class="font-data-mono-sm text-data-mono-sm text-error">-380,400 (Unwinding)</span>
+</div>
+<!-- Call OI Bar -->
+<div class="flex-1 px-space-md flex flex-col items-end">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant mb-1">CE Share: 31.8%</span>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden flex justify-end">
+<div class="h-full bg-error" style="width: 31.8%;"></div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">CE LTP</span>
+<div class="font-data-mono-md text-data-mono-md text-primary font-bold">₹168.40</div>
+<div class="font-data-mono-sm text-data-mono-sm text-primary">+42.10%</div>
+</div>
+</div>
+<!-- Strike Center Pin -->
+<div class="w-full lg:w-2/12 flex flex-col items-center justify-center bg-surface-container p-space-sm rounded text-center">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">STRIKE -2 (DEEP SUPPORT)</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">24,250</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="bg-primary/20 text-primary font-data-mono-sm text-data-mono-sm px-space-xs rounded font-bold">PCR: 2.14</span>
+<span class="text-primary font-label-caps text-label-caps uppercase font-bold">STRONG PE BASE</span>
+</div>
+</div>
+<!-- Put Wing Right -->
+<div class="w-full lg:w-5/12 flex items-center justify-between space-x-space-md">
+<div class="text-left">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">PE LTP</span>
+<div class="font-data-mono-md text-data-mono-md text-error font-bold">₹36.80</div>
+<div class="font-data-mono-sm text-data-mono-sm text-error">-38.20%</div>
+</div>
+<!-- Put OI Bar -->
+<div class="flex-1 px-space-md flex flex-col items-start">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant mb-1">PE Share: 68.2%</span>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden flex justify-start">
+<div class="h-full bg-primary" style="width: 68.2%;"></div>
+</div>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">PUT OI</span>
+<span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold">3,942,650</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary">+1,280,100 (Heavy Add)</span>
+</div>
+</div>
+</div>
+<!-- STRIKE -1: 24,300 (Immediate Support) -->
+<div class="bg-surface-container-lowest hover:bg-surface-container/60 transition-colors p-space-md rounded-lg flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- Call Wing Left -->
+<div class="w-full lg:w-5/12 flex items-center justify-between space-x-space-md">
+<div class="flex flex-col text-left">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">CALL OI</span>
+<span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold">2,760,100</span>
+<span class="font-data-mono-sm text-data-mono-sm text-error">-620,000 (Short Covering)</span>
+</div>
+<div class="flex-1 px-space-md flex flex-col items-end">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant mb-1">CE Share: 35.4%</span>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden flex justify-end">
+<div class="h-full bg-error" style="width: 35.4%;"></div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">CE LTP</span>
+<div class="font-data-mono-md text-data-mono-md text-primary font-bold">₹124.60</div>
+<div class="font-data-mono-sm text-data-mono-sm text-primary">+34.80%</div>
+</div>
+</div>
+<!-- Strike Center Pin -->
+<div class="w-full lg:w-2/12 flex flex-col items-center justify-center bg-surface-container p-space-sm rounded text-center">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">STRIKE -1 (IMMEDIATE SUPPORT)</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">24,300</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="bg-primary/20 text-primary font-data-mono-sm text-data-mono-sm px-space-xs rounded font-bold">PCR: 1.82</span>
+<span class="text-primary font-label-caps text-label-caps uppercase font-bold">AGGRESSIVE PUT WRITING</span>
+</div>
+</div>
+<!-- Put Wing Right -->
+<div class="w-full lg:w-5/12 flex items-center justify-between space-x-space-md">
+<div class="text-left">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">PE LTP</span>
+<div class="font-data-mono-md text-data-mono-md text-error font-bold">₹54.20</div>
+<div class="font-data-mono-sm text-data-mono-sm text-error">-31.50%</div>
+</div>
+<div class="flex-1 px-space-md flex flex-col items-start">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant mb-1">PE Share: 64.6%</span>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden flex justify-start">
+<div class="h-full bg-primary" style="width: 64.6%;"></div>
+</div>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">PUT OI</span>
+<span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold">5,028,800</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary">+2,440,000 (Max Put Add)</span>
+</div>
+</div>
+</div>
+<!-- STRIKE ATM: 24,350 (THE HORIZON PIVOT - HIGHLIGHTED) -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col lg:flex-row items-center justify-between gap-space-md shadow-lg relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary"></div>
+<!-- Call Wing Left -->
+<div class="w-full lg:w-5/12 flex items-center justify-between space-x-space-md">
+<div class="flex flex-col text-left">
+<span class="font-label-caps text-label-caps uppercase text-tertiary font-bold">CALL OI (ATM CE)</span>
+<span class="font-data-mono-lg text-data-mono-lg text-on-surface font-bold">4,120,500</span>
+<span class="font-data-mono-sm text-data-mono-sm text-error font-bold">-1,820,000 (CE UNWINDING!)</span>
+</div>
+<div class="flex-1 px-space-md flex flex-col items-end">
+<span class="font-data-mono-sm text-data-mono-sm text-tertiary font-bold mb-1">CE Share: 42.7%</span>
+<div class="w-full h-3 bg-surface-container-lowest rounded-full overflow-hidden flex justify-end">
+<div class="h-full bg-error" style="width: 42.7%;"></div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">CE LTP</span>
+<div class="font-data-mono-lg text-data-mono-lg text-primary font-bold">₹86.50</div>
+<div class="font-data-mono-sm text-data-mono-sm text-primary">+28.30%</div>
+</div>
+</div>
+<!-- Strike Center Pin ATM (Special Badge) -->
+<div class="w-full lg:w-2/12 flex flex-col items-center justify-center bg-tertiary-container/30 px-space-md py-space-sm rounded-lg text-center shadow-sm">
+<span class="font-label-caps text-label-caps uppercase text-tertiary font-bold flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span> COMPUTED ATM PIVOT
+          </span>
+<span class="font-headline-xl text-headline-xl text-on-surface font-extrabold tracking-tighter">24,350</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="bg-primary text-on-primary font-data-mono-sm text-data-mono-sm px-space-xs rounded font-bold">PCR: 1.34</span>
+<span class="text-primary font-label-caps text-label-caps uppercase font-bold">BULLISH SQUEEZE</span>
+</div>
+</div>
+<!-- Put Wing Right -->
+<div class="w-full lg:w-5/12 flex items-center justify-between space-x-space-md">
+<div class="text-left">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">PE LTP</span>
+<div class="font-data-mono-lg text-data-mono-lg text-error font-bold">₹76.30</div>
+<div class="font-data-mono-sm text-data-mono-sm text-error">-24.80%</div>
+</div>
+<div class="flex-1 px-space-md flex flex-col items-start">
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-bold mb-1">PE Share: 57.3%</span>
+<div class="w-full h-3 bg-surface-container-lowest rounded-full overflow-hidden flex justify-start">
+<div class="h-full bg-primary" style="width: 57.3%;"></div>
+</div>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caps text-label-caps uppercase text-primary font-bold">PUT OI (ATM PE)</span>
+<span class="font-data-mono-lg text-data-mono-lg text-on-surface font-bold">5,530,900</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-bold">+3,150,000 (MASSIVE SQUEEZE)</span>
+</div>
+</div>
+</div>
+<!-- STRIKE +1: 24,400 (Immediate Resistance) -->
+<div class="bg-surface-container-lowest hover:bg-surface-container/60 transition-colors p-space-md rounded-lg flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- Call Wing Left -->
+<div class="w-full lg:w-5/12 flex items-center justify-between space-x-space-md">
+<div class="flex flex-col text-left">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">CALL OI</span>
+<span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold">4,620,000</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary">+840,000 (Mild Trapping)</span>
+</div>
+<div class="flex-1 px-space-md flex flex-col items-end">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant mb-1">CE Share: 53.1%</span>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden flex justify-end">
+<div class="h-full bg-error" style="width: 53.1%;"></div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">CE LTP</span>
+<div class="font-data-mono-md text-data-mono-md text-primary font-bold">₹58.10</div>
+<div class="font-data-mono-sm text-data-mono-sm text-primary">+18.40%</div>
+</div>
+</div>
+<!-- Strike Center Pin -->
+<div class="w-full lg:w-2/12 flex flex-col items-center justify-center bg-surface-container p-space-sm rounded text-center">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">STRIKE +1 (RESISTANCE 1)</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">24,400</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="bg-surface-container-high text-on-surface font-data-mono-sm text-data-mono-sm px-space-xs rounded font-bold">PCR: 0.88</span>
+<span class="text-on-surface-variant font-label-caps text-label-caps uppercase font-bold">NEUTRAL / STRUGGLE</span>
+</div>
+</div>
+<!-- Put Wing Right -->
+<div class="w-full lg:w-5/12 flex items-center justify-between space-x-space-md">
+<div class="text-left">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">PE LTP</span>
+<div class="font-data-mono-md text-data-mono-md text-error font-bold">₹108.50</div>
+<div class="font-data-mono-sm text-data-mono-sm text-error">-19.20%</div>
+</div>
+<div class="flex-1 px-space-md flex flex-col items-start">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant mb-1">PE Share: 46.9%</span>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden flex justify-start">
+<div class="h-full bg-primary" style="width: 46.9%;"></div>
+</div>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">PUT OI</span>
+<span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold">4,080,400</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary">+1,120,000 (Fresh Adds)</span>
+</div>
+</div>
+</div>
+<!-- STRIKE +2: 24,450 (Major Resistance / Cap) -->
+<div class="bg-surface-container-lowest hover:bg-surface-container/60 transition-colors p-space-md rounded-lg flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- Call Wing Left -->
+<div class="w-full lg:w-5/12 flex items-center justify-between space-x-space-md">
+<div class="flex flex-col text-left">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">CALL OI</span>
+<span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold">5,840,000</span>
+<span class="font-data-mono-sm text-data-mono-sm text-primary font-bold">+1,620,000 (Heavy Writing)</span>
+</div>
+<div class="flex-1 px-space-md flex flex-col items-end">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant mb-1">CE Share: 64.9%</span>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden flex justify-end">
+<div class="h-full bg-error" style="width: 64.9%;"></div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">CE LTP</span>
+<div class="font-data-mono-md text-data-mono-md text-primary font-bold">₹37.20</div>
+<div class="font-data-mono-sm text-data-mono-sm text-primary">+8.50%</div>
+</div>
+</div>
+<!-- Strike Center Pin -->
+<div class="w-full lg:w-2/12 flex flex-col items-center justify-center bg-surface-container p-space-sm rounded text-center">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">STRIKE +2 (MAJOR RESISTANCE)</span>
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">24,450</span>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="bg-error/20 text-error font-data-mono-sm text-data-mono-sm px-space-xs rounded font-bold">PCR: 0.54</span>
+<span class="text-error font-label-caps text-label-caps uppercase font-bold">CE WALL DETECTED</span>
+</div>
+</div>
+<!-- Put Wing Right -->
+<div class="w-full lg:w-5/12 flex items-center justify-between space-x-space-md">
+<div class="text-left">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">PE LTP</span>
+<div class="font-data-mono-md text-data-mono-md text-error font-bold">₹148.00</div>
+<div class="font-data-mono-sm text-data-mono-sm text-error">-12.40%</div>
+</div>
+<div class="flex-1 px-space-md flex flex-col items-start">
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant mb-1">PE Share: 35.1%</span>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden flex justify-start">
+<div class="h-full bg-primary" style="width: 35.1%;"></div>
+</div>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">PUT OI</span>
+<span class="font-data-mono-md text-data-mono-md text-on-surface font-semibold">3,160,200</span>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">+310,000 (Low Add)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MULTI-FACTOR DIRECTIONAL SCORING BREAKDOWN (4-Card Metric Grid) -->
+<section class="w-full bg-gradient-to-br from-surface-container-low via-surface-container to-surface-container-high rounded-xl p-space-lg shadow-xl border border-tertiary-container/30 space-y-space-md relative overflow-hidden"><div class="absolute -right-20 -top-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div><div class="absolute -left-20 -bottom-20 w-80 h-80 bg-tertiary/10 rounded-full blur-3xl pointer-events-none"></div><div class="relative z-10 flex flex-wrap items-center justify-between gap-space-md border-b border-outline-variant/20 pb-space-sm"><div class="flex items-center gap-space-sm"><div class="p-space-xs bg-primary/20 rounded flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[22px]">timer</span></div><div><div class="flex items-center gap-space-xs"><h2 class="font-headline-md text-headline-md text-on-surface font-bold">CE / PE OPTIMUM ENTRY TIMING RADAR &amp; CONFLUENCE ADVISOR</h2><span class="bg-primary text-on-primary font-data-mono-sm text-data-mono-sm px-space-xs rounded font-extrabold uppercase animate-pulse">5 EMA × HA SHAVEN WICK × 5-STRIKE FLOW</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Intelligent multi-model synchronization for precise intraday Call vs Put entry trigger timing</p></div></div><div class="flex items-center gap-space-md font-data-mono-sm text-data-mono-sm"><div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded border border-outline-variant/30"><span class="material-symbols-outlined text-tertiary text-[16px]">schedule</span><span class="text-on-surface-variant font-label-caps uppercase">5M CANDLE CLOSE:</span><span class="text-primary font-bold animate-pulse">02:45</span></div><div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded border border-primary/40"><span class="w-2 h-2 rounded-full bg-primary animate-ping"></span><span class="text-primary font-bold uppercase">VERDICT: BUY CE (MOMENTUM SCALP)</span></div></div></div><div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg"><div class="lg:col-span-6 bg-surface-container-lowest/95 rounded-xl p-space-md border-2 border-primary/40 shadow-lg space-y-space-md relative overflow-hidden"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span><span class="font-headline-md text-headline-md text-primary font-bold">CALL BUY ADVISOR (CE)</span></div><span class="bg-primary/20 text-primary border border-primary/40 font-data-mono-sm text-data-mono-sm px-space-sm py-space-xs rounded font-bold uppercase">OPTIMUM CE BUY WINDOW OPEN</span></div><div class="space-y-space-xs"><div class="flex justify-between items-baseline font-data-mono-sm text-data-mono-sm"><span class="font-label-caps uppercase text-on-surface-variant">CE CONFLUENCE SCORE</span><span class="text-primary font-bold text-data-mono-lg">88% [SUPERIOR MOMENTUM]</span></div><div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden flex"><div class="h-full bg-primary rounded-full" style="width: 88%;"></div></div></div><div class="space-y-space-xs font-data-mono-sm text-data-mono-sm"><div class="flex items-center justify-between p-space-xs bg-surface-container rounded"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span><span class="text-on-surface">1. Heikin-Ashi Flat Wick (No Lower Shadow):</span></div><span class="text-primary font-bold bg-primary/10 px-space-xs rounded">VALID (FLAT BOTTOM)</span></div><div class="flex items-center justify-between p-space-xs bg-surface-container rounded"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span><span class="text-on-surface">2. 5 EMA Trajectory &amp; Spot Positioning:</span></div><span class="text-primary font-bold bg-primary/10 px-space-xs rounded">SPOT &gt; 5 EMA (24,362.40 &gt; 24,368)</span></div><div class="flex items-center justify-between p-space-xs bg-surface-container rounded"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span><span class="text-on-surface">3. 5-Strike ATM Options Flow &amp; PCR:</span></div><span class="text-primary font-bold bg-primary/10 px-space-xs rounded">PCR 1.34 + CE UNWINDING</span></div></div><div class="grid grid-cols-4 gap-space-xs bg-surface-container p-space-sm rounded font-data-mono-sm text-data-mono-sm text-center"><div><span class="text-on-surface-variant font-label-caps uppercase text-[10px]">STRIKE</span><div class="text-primary font-bold">24,350 CE</div></div><div><span class="text-on-surface-variant font-label-caps uppercase text-[10px]">ENTRY SPOT</span><div class="text-on-surface font-bold">24,355-365</div></div><div><span class="text-on-surface-variant font-label-caps uppercase text-[10px]">STOP LOSS</span><div class="text-error font-bold">24,325</div></div><div><span class="text-on-surface-variant font-label-caps uppercase text-[10px]">TARGET</span><div class="text-primary font-bold">24,440</div></div></div><div class="flex items-center justify-between pt-space-xs"><span class="text-body-sm text-primary font-semibold flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">electric_bolt</span> Trigger: Buy ATM CE while 5m HA candle remains shaven-bottom</span><button class="bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-caps text-label-caps uppercase px-space-md py-space-xs rounded font-bold shadow-sm">TEST CE ALERT</button></div></div><div class="lg:col-span-6 bg-surface-container-lowest/95 rounded-xl p-space-md border border-outline-variant/30 shadow-lg space-y-space-md relative overflow-hidden"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-error"></span><span class="font-headline-md text-headline-md text-error font-bold">PUT BUY ADVISOR (PE)</span></div><span class="bg-surface-container text-on-surface-variant border border-outline-variant/30 font-data-mono-sm text-data-mono-sm px-space-sm py-space-xs rounded font-bold uppercase">CONDITIONS STANDBY / ARMED</span></div><div class="space-y-space-xs"><div class="flex justify-between items-baseline font-data-mono-sm text-data-mono-sm"><span class="font-label-caps uppercase text-on-surface-variant">PE CONFLUENCE SCORE</span><span class="text-error font-bold text-data-mono-lg">24% [WAIT FOR SYNC]</span></div><div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden flex"><div class="h-full bg-error rounded-full" style="width: 24%;"></div></div></div><div class="space-y-space-xs font-data-mono-sm text-data-mono-sm"><div class="flex items-center justify-between p-space-xs bg-surface-container rounded"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">check_circle</span><span class="text-on-surface">1. 5 EMA Detached Candle Breakdown:</span></div><span class="text-error font-bold bg-error/10 px-space-xs rounded">ALERT CANDLE LOW BROKEN</span></div><div class="flex items-center justify-between p-space-xs bg-surface-container rounded"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-error">pending</span><span class="text-on-surface">2. Heikin-Ashi Flat Wick (No Upper Shadow):</span></div><span class="text-on-surface-variant font-bold bg-surface-container-high px-space-xs rounded">INACTIVE (HA IS GREEN)</span></div><div class="flex items-center justify-between p-space-xs bg-surface-container rounded"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-error">pending</span><span class="text-on-surface">3. 5-Strike ATM Options Flow &amp; PCR:</span></div><span class="text-on-surface-variant font-bold bg-surface-container-high px-space-xs rounded">PCR 1.34 &gt; 0.85 (NO PE ADD)</span></div></div><div class="grid grid-cols-4 gap-space-xs bg-surface-container p-space-sm rounded font-data-mono-sm text-data-mono-sm text-center"><div><span class="text-on-surface-variant font-label-caps uppercase text-[10px]">STRIKE</span><div class="text-on-surface font-bold">24,350 PE</div></div><div><span class="text-on-surface-variant font-label-caps uppercase text-[10px]">TRIGGER ON</span><div class="text-on-surface font-bold">HA RED FLIP</div></div><div><span class="text-on-surface-variant font-label-caps uppercase text-[10px]">STOP LOSS</span><div class="text-error font-bold">24,392</div></div><div><span class="text-on-surface-variant font-label-caps uppercase text-[10px]">TARGET</span><div class="text-primary font-bold">24,285</div></div></div><div class="flex items-center justify-between pt-space-xs"><span class="text-body-sm text-on-surface-variant flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-tertiary">info</span> Standby: Await Red HA flat-top candle to confirm breakdown</span><button class="bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-caps text-label-caps uppercase px-space-md py-space-xs rounded font-bold shadow-sm">TEST PE ALERT</button></div></div></div><div class="relative z-10 pt-space-xs border-t border-outline-variant/20 flex flex-wrap items-center justify-between gap-space-sm font-data-mono-sm text-data-mono-sm"><div class="flex items-center flex-wrap gap-space-md"><label class="flex items-center gap-space-xs cursor-pointer"><input checked="" class="accent-primary w-3.5 h-3.5" type="checkbox"><span class="font-label-caps text-label-caps uppercase text-on-surface font-bold">Instant Audio Beep on HA Shaven Wick + 5 EMA Confluence</span></label><label class="flex items-center gap-space-xs cursor-pointer"><input checked="" class="accent-primary w-3.5 h-3.5" type="checkbox"><span class="font-label-caps text-label-caps uppercase text-primary font-bold">Auto-Alert: Optimum CE Buy Trigger</span></label><label class="flex items-center gap-space-xs cursor-pointer"><input checked="" class="accent-primary w-3.5 h-3.5" type="checkbox"><span class="font-label-caps text-label-caps uppercase text-error font-bold">Auto-Alert: Optimum PE Buy Trigger (5 EMA Breakdown)</span></label></div><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-tertiary">sensors</span><span class="">Telemetry: Sub-10ms Hook Engine Active</span></div></div></section><section class="w-full bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-md border border-outline-variant/30"><div class="flex flex-wrap items-center justify-between gap-space-md border-b border-outline-variant/20 pb-space-sm"><div class="flex items-center gap-space-sm"><div class="p-space-xs bg-tertiary/10 rounded flex items-center justify-center"><span class="material-symbols-outlined text-tertiary text-[20px]">radar</span></div><div><div class="flex items-center gap-space-xs"><h2 class="font-headline-md text-headline-md text-on-surface font-bold">QUANT STRATEGY ALERTS &amp; SCANNER</h2><span class="bg-primary/20 text-primary font-data-mono-sm text-data-mono-sm px-space-xs rounded font-bold uppercase animate-pulse">LIVE 5M RADAR</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Sub-second pattern recognition for 5 EMA Mean Reversion Breakdowns &amp; Pure Heikin-Ashi Flat-Wick Directional Shifts</p></div></div><div class="flex items-center gap-space-sm font-data-mono-sm text-data-mono-sm"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded text-on-surface-variant"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span><span class="">TF: 5m NIFTY</span></div><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded"><span class="text-on-surface-variant">ACTIVE RULES:</span><span class="text-tertiary font-bold">2/2 ARMED</span></div></div></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md"><div class="bg-surface-container-lowest p-space-md rounded-lg border border-outline-variant/40 space-y-space-md flex flex-col justify-between relative overflow-hidden"><div class="absolute top-0 right-0 w-32 h-32 bg-error/10 rounded-full blur-2xl pointer-events-none"></div><div class="space-y-space-sm relative z-10"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="font-label-caps text-label-caps uppercase text-error font-bold tracking-wider">STRATEGY ALERT 01: 5 EMA REVERSAL (5M)</span></div><span class="bg-error text-on-error font-data-mono-sm text-data-mono-sm px-space-sm py-space-xs rounded font-extrabold uppercase shadow-sm flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>SIGNAL ACTIVE: SHORT TRIGGERED</span></div><div class="space-y-space-xs"><div class="flex items-center justify-between"><span class="font-headline-md text-headline-md text-on-surface font-bold">5 EMA Detached Candle Breakdown</span><span class="font-data-mono-sm text-data-mono-sm text-error bg-error/10 px-space-xs py-0.5 rounded font-bold">BEARISH SHORT SETUP</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">5m Alert Candle closed completely above 5 EMA (24,368.10). Trigger Candle breached Alert Low &amp; formed Red close.</p></div><div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><div class="flex flex-col items-center justify-center bg-surface-container-lowest px-space-sm py-space-xs rounded border border-error/40"><div class="w-0.5 h-2 bg-error"></div><div class="w-3 h-5 bg-error rounded-xs"></div><div class="w-0.5 h-3 bg-error"></div><span class="font-label-caps text-label-caps text-error mt-0.5">TRIG</span></div><div class="font-data-mono-sm text-data-mono-sm space-y-0.5"><div><span class="text-on-surface-variant">ALERT LOW:</span> <span class="text-on-surface font-bold">24,378.50</span></div><div><span class="text-on-surface-variant">5 EMA LEVEL:</span> <span class="text-tertiary font-bold">24,368.10</span></div><div class="text-error font-semibold">Current Spot: 24,362.40 (Broken -16.10 pts)</div></div></div><div class="text-right font-data-mono-sm text-data-mono-sm space-y-0.5 border-l border-outline-variant/30 pl-space-sm"><div><span class="text-error font-semibold">SL (HIGH):</span> <span class="text-error font-bold">24,392.20</span></div><div><span class="text-primary font-semibold">TARGET 1:</span> <span class="text-primary font-bold">24,320.00</span></div><div><span class="text-primary font-semibold">TARGET 2:</span> <span class="text-primary font-bold">24,285.00</span></div></div></div></div><div class="pt-space-xs border-t border-outline-variant/20 flex flex-wrap items-center justify-between gap-space-sm relative z-10"><label class="flex items-center gap-space-xs cursor-pointer"><input checked="" class="accent-primary w-3.5 h-3.5" type="checkbox"><span class="font-label-caps text-label-caps uppercase text-on-surface font-bold">5 EMA 5-min Short Reversal Alert</span></label><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm text-on-surface-variant"><span class="material-symbols-outlined text-[14px] text-tertiary">volume_up</span><span class="text-primary font-bold">Sound &amp; Webhook Armed</span></div></div></div><div class="bg-surface-container-lowest p-space-md rounded-lg border border-outline-variant/40 space-y-space-md flex flex-col justify-between relative overflow-hidden"><div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div><div class="space-y-space-sm relative z-10"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="font-label-caps text-label-caps uppercase text-tertiary font-bold tracking-wider">STRATEGY ALERT 02: HEIKIN-ASHI TREND SHIFT</span></div><span class="bg-primary text-on-primary font-data-mono-sm text-data-mono-sm px-space-sm py-space-xs rounded font-extrabold uppercase shadow-sm flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-on-primary animate-ping"></span>BULLISH FLAT BOTTOM (SHAVEN WICK)</span></div><div class="space-y-space-xs"><div class="flex items-center justify-between"><span class="font-headline-md text-headline-md text-on-surface font-bold">Pure HA Trend Confirmation &amp; Wick Diagnostic</span><span class="font-data-mono-sm text-data-mono-sm text-primary bg-primary/10 px-space-xs py-0.5 rounded font-bold">BUYER DOMINANCE</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Green HA candle confirmed with zero lower shadow (pure flat bottom). Indicates intense unidirectional upward momentum.</p></div><div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><div class="flex flex-col items-center justify-center bg-surface-container-lowest px-space-sm py-space-xs rounded border border-primary/40"><div class="w-0.5 h-3 bg-primary"></div><div class="w-3 h-5 bg-primary rounded-xs"></div><div class="w-0.5 h-0 bg-transparent"></div><span class="font-label-caps text-label-caps text-primary mt-0.5">HA 5M</span></div><div class="font-data-mono-sm text-data-mono-sm space-y-0.5"><div><span class="text-on-surface-variant">HA OPEN = LOW:</span> <span class="text-primary font-bold">24,348.60</span></div><div><span class="text-on-surface-variant">LOWER WICK:</span> <span class="text-primary font-bold">0.00 pts (ABSENT / FLAT)</span></div><div class="text-on-surface">Consecutive Flat Candles: <span class="text-tertiary font-bold">3 in row</span></div></div></div><div class="text-right font-data-mono-sm text-data-mono-sm space-y-0.5 border-l border-outline-variant/30 pl-space-sm"><div><span class="text-on-surface-variant">HA HIGH:</span> <span class="text-on-surface font-bold">24,368.80</span></div><div><span class="text-on-surface-variant">HA CLOSE:</span> <span class="text-primary font-bold">24,362.40</span></div><div><span class="text-on-surface-variant">STATUS:</span> <span class="text-primary font-bold">EXPANSION RUN</span></div></div></div></div><div class="pt-space-xs border-t border-outline-variant/20 flex flex-wrap items-center justify-between gap-space-sm relative z-10"><label class="flex items-center gap-space-xs cursor-pointer"><input checked="" class="accent-primary w-3.5 h-3.5" type="checkbox"><span class="font-label-caps text-label-caps uppercase text-on-surface font-bold">Flat Wick / Trend Shift Instant Alert</span></label><div class="flex items-center gap-space-xs font-data-mono-sm text-data-mono-sm text-on-surface-variant"><span class="material-symbols-outlined text-[14px] text-tertiary">notifications_active</span><span class="text-primary font-bold">Telegram Dispatch Armed</span></div></div></div></div></section><section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Factor 1: Net OI Change Dominance -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">FACTOR 01: 5-STRIKE OI FLOW</span>
+<span class="material-symbols-outlined text-primary text-[18px]">difference</span>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">Puts +8.9M vs Calls +4.2M</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Put additions outpacing Calls by <strong class="text-primary font-bold">2.12x</strong> across key cluster, validating solid institutional support under spot.
+        </p>
+</div>
+<!-- Inline Comparative Bar -->
+<div class="pt-space-xs space-y-1">
+<div class="flex justify-between font-data-mono-sm text-data-mono-sm">
+<span class="text-error font-semibold">CE Delta: +4.2M</span>
+<span class="text-primary font-semibold">PE Delta: +8.9M</span>
+</div>
+<div class="w-full h-2 bg-surface-container-lowest rounded-full overflow-hidden flex">
+<div class="h-full bg-error" style="width: 32%;"></div>
+<div class="h-full bg-primary" style="width: 68%;"></div>
+</div>
+</div>
+</div>
+<!-- Factor 2: ATM Straddle Price & IV Dynamics -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">FACTOR 02: ATM STRADDLE &amp; IV</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">analytics</span>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">₹162.80 (-14.20 pts)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          IV sits at <strong class="text-tertiary font-bold">12.84%</strong> (Cooling). Premium compression favors upward directional drift while protecting put sellers.
+        </p>
+</div>
+<div class="pt-space-xs font-data-mono-sm text-data-mono-sm flex justify-between bg-surface-container-lowest p-space-sm rounded">
+<div><span class="text-on-surface-variant">BEP LOW:</span> <span class="text-on-surface font-bold">24,187</span></div>
+<div><span class="text-on-surface-variant">BEP HIGH:</span> <span class="text-on-surface font-bold">24,513</span></div>
+</div>
+</div>
+<!-- Factor 3: Weighted PCR Trend Slope -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">FACTOR 03: PCR OSCILLATOR</span>
+<span class="material-symbols-outlined text-primary text-[18px]">trending_up</span>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-primary font-bold">1.38 (Bull Expansion)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          PCR climbed from 0.92 (09:30 AM) → 1.18 (11:30 AM) → 1.38 (Present). Upward trajectory indicates zero intraday distribution.
+        </p>
+</div>
+<!-- SVG Mini Trend Sparkline -->
+<div class="w-full h-8 flex items-center">
+<svg class="w-full h-7 text-primary overflow-visible" fill="none" viewBox="0 0 100 24">
+<path d="M0,20 Q20,18 40,14 T80,8 L100,2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="100" cy="2" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+</div>
+<!-- Factor 4: Institutional Smart Money Flow -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-sm shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">FACTOR 04: BLOCK FOOTPRINT</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">security</span>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">FII/PRO Net Long Calls</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Heavy 24,300 PE selling absorbed by institutional writers. Retail panic buying on morning dip was fully matched by algorithmic absorption.
+        </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between font-data-mono-sm text-data-mono-sm bg-surface-container-lowest p-space-sm rounded">
+<span class="text-on-surface-variant">SMART SKEW:</span>
+<span class="text-primary font-bold">NET ACCUMULATION (+82)</span>
+</div>
+</div>
+</section>
+<!-- LIVE TICK ORDER FLOW & BUILT-UP SIGNALS + INTERACTIVE SIMULATOR (Two-Column Layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Left 8 Cols: Real-Time NSE Strike Flow Table -->
+<section class="lg:col-span-8 bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-md flex flex-col">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">reorder</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">REAL-TIME NSE STRIKE TICK ENGINE</span>
+</div>
+<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">TICK STREAM: 1s HIGH FREQUENCY</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-data-mono-md text-data-mono-md">
+<thead>
+<tr class="bg-surface-container-lowest text-on-surface-variant font-label-caps text-label-caps uppercase">
+<th class="p-space-sm">Strike</th>
+<th class="p-space-sm">Type</th>
+<th class="p-space-sm text-right">LTP (₹)</th>
+<th class="p-space-sm text-right">Chg %</th>
+<th class="p-space-sm text-right">OI (Shares)</th>
+<th class="p-space-sm text-right">OI Chg Today</th>
+<th class="p-space-sm text-center">Buildup Diagnosis</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 space-y-1">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="p-space-sm text-on-surface font-bold">24,250</td>
+<td class="p-space-sm text-primary font-bold">CE</td>
+<td class="p-space-sm text-right text-on-surface">168.40</td>
+<td class="p-space-sm text-right text-primary">+42.1%</td>
+<td class="p-space-sm text-right text-on-surface">1.84M</td>
+<td class="p-space-sm text-right text-error font-semibold">-380K</td>
+<td class="p-space-sm text-center">
+<span class="bg-primary/10 text-primary font-label-caps text-label-caps px-space-xs py-0.5 rounded font-bold uppercase">Long Buildup</span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="p-space-sm text-on-surface font-bold">24,300</td>
+<td class="p-space-sm text-error font-bold">PE</td>
+<td class="p-space-sm text-right text-on-surface">54.20</td>
+<td class="p-space-sm text-right text-error">-31.5%</td>
+<td class="p-space-sm text-right text-on-surface">5.02M</td>
+<td class="p-space-sm text-right text-primary font-bold">+2.44M</td>
+<td class="p-space-sm text-center">
+<span class="bg-primary/20 text-primary font-label-caps text-label-caps px-space-xs py-0.5 rounded font-bold uppercase">Short Buildup (Writers)</span>
+</td>
+</tr>
+<!-- Row 3 (ATM HIGHLIGHTED) -->
+<tr class="bg-tertiary-container/20 font-bold">
+<td class="p-space-sm text-tertiary font-extrabold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[14px]">my_location</span> 24,350 ATM
+              </td>
+<td class="p-space-sm text-primary font-bold">CE</td>
+<td class="p-space-sm text-right text-on-surface">86.50</td>
+<td class="p-space-sm text-right text-primary">+28.3%</td>
+<td class="p-space-sm text-right text-on-surface">4.12M</td>
+<td class="p-space-sm text-right text-error font-bold">-1.82M</td>
+<td class="p-space-sm text-center">
+<span class="bg-error/20 text-error font-label-caps text-label-caps px-space-xs py-0.5 rounded font-bold uppercase">Short Covering Rally</span>
+</td>
+</tr>
+<!-- Row 4 (ATM PE) -->
+<tr class="bg-tertiary-container/10">
+<td class="p-space-sm text-tertiary font-semibold">24,350 ATM</td>
+<td class="p-space-sm text-error font-bold">PE</td>
+<td class="p-space-sm text-right text-on-surface">76.30</td>
+<td class="p-space-sm text-right text-error">-24.8%</td>
+<td class="p-space-sm text-right text-on-surface">5.53M</td>
+<td class="p-space-sm text-right text-primary font-bold">+3.15M</td>
+<td class="p-space-sm text-center">
+<span class="bg-primary/20 text-primary font-label-caps text-label-caps px-space-xs py-0.5 rounded font-bold uppercase">Aggressive Put Writing</span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="p-space-sm text-on-surface font-bold">24,400</td>
+<td class="p-space-sm text-primary font-bold">CE</td>
+<td class="p-space-sm text-right text-on-surface">58.10</td>
+<td class="p-space-sm text-right text-primary">+18.4%</td>
+<td class="p-space-sm text-right text-on-surface">4.62M</td>
+<td class="p-space-sm text-right text-primary font-semibold">+840K</td>
+<td class="p-space-sm text-center">
+<span class="bg-surface-container-high text-on-surface font-label-caps text-label-caps px-space-xs py-0.5 rounded font-bold uppercase">Long Buildup</span>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="p-space-sm text-on-surface font-bold">24,450</td>
+<td class="p-space-sm text-primary font-bold">CE</td>
+<td class="p-space-sm text-right text-on-surface">37.20</td>
+<td class="p-space-sm text-right text-primary">+8.5%</td>
+<td class="p-space-sm text-right text-on-surface">5.84M</td>
+<td class="p-space-sm text-right text-primary font-bold">+1.62M</td>
+<td class="p-space-sm text-center">
+<span class="bg-error/20 text-error font-label-caps text-label-caps px-space-xs py-0.5 rounded font-bold uppercase">Resistance Wall Call Add</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Right 4 Cols: Dynamic ATM Simulator & Webhook Alerts -->
+<section class="lg:col-span-4 bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-md flex flex-col justify-between">
+<!-- Interactive Strike Shift Simulator -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">tune</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">ATM SHIFT SIMULATOR</span>
+</div>
+<span class="font-label-caps text-label-caps uppercase text-tertiary bg-tertiary/10 px-space-xs rounded">PREDICTIVE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Adjust hypothetical spot price to project the upcoming pivot shift and next strike boundary re-alignment.
+        </p>
+<div class="space-y-space-xs bg-surface-container-lowest p-space-md rounded-lg">
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">SIMULATED SPOT:</span>
+<span class="font-data-mono-lg text-data-mono-lg text-primary font-bold" id="simSpotVal">24,400.00</span>
+</div>
+<input class="w-full accent-primary cursor-pointer" id="spotSlider" max="24500" min="24250" step="50" type="range" value="24400">
+<div class="flex justify-between font-data-mono-sm text-data-mono-sm text-on-surface-variant">
+<span class="">24,250</span>
+<span class="">24,350 (NOW)</span>
+<span class="">24,500</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg font-data-mono-sm text-data-mono-sm space-y-space-xs" id="simResultBox">
+<div class="text-on-surface-variant font-label-caps uppercase">PROJECTION ON SPOT BREACH:</div>
+<div class="text-on-surface">New ATM: <strong class="text-tertiary font-bold">24,400 CE/PE</strong></div>
+<div class="text-on-surface-variant">Calculated Shift Cluster: <span class="text-on-surface">24,300 (New -2) → 24,500 (New +2)</span></div>
+<div class="text-primary font-semibold">Immediate Squeeze Target: 24,450 (+50 pts)</div>
+</div>
+</div>
+<!-- Quick Alert & Webhook Trigger Config -->
+<div class="space-y-space-xs bg-surface-container-lowest p-space-md rounded-lg mt-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold">INTRADAY TRIGGER ALERTS</span>
+<span class="material-symbols-outlined text-[16px] text-primary">notifications_active</span>
+</div>
+<div class="space-y-space-xs font-body-sm text-body-sm"><label class="flex items-center gap-space-xs cursor-pointer text-on-surface"><input checked="" class="accent-primary w-3.5 h-3.5" type="checkbox"><span class="text-primary font-semibold">ALERT: Optimum CE Buy - HA Green (No Lower Wick) + Spot &gt; 5 EMA + PCR &gt; 1.2</span></label><label class="flex items-center gap-space-xs cursor-pointer text-on-surface"><input checked="" class="accent-primary w-3.5 h-3.5" type="checkbox"><span class="text-error font-semibold">ALERT: Optimum PE Buy - 5 EMA Red Breakdown + HA Red (No Upper Wick) + PCR &lt; 0.9</span></label><label class="flex items-center gap-space-xs cursor-pointer text-on-surface"><input checked="" class="accent-primary w-3.5 h-3.5" type="checkbox"><span class="">Sound alarm on 24,350 CE short buildup flip</span></label><label class="flex items-center gap-space-xs cursor-pointer text-on-surface"><input checked="" class="accent-primary w-3.5 h-3.5" type="checkbox"><span class="">Instant Audio Beep on HA Shaven Wick + 5 EMA Confluence</span></label><label class="flex items-center gap-space-xs cursor-pointer text-on-surface"><input checked="" class="accent-primary w-3.5 h-3.5" type="checkbox"><span class="">Dispatch Telegram payload upon ATM Migration</span></label></div>
+<button class="w-full mt-space-sm bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-caps text-label-caps uppercase py-space-sm rounded transition-all">
+          Update Active Webhooks
+        </button>
+</div>
+</section>
+</div>
+</div>
+<!-- Interactive Client-side Micro-interactions -->
+<script>
+  (function initAtmPredictiveEngine() {
+    // 1. Simulator Slider Updates
+    const slider = document.getElementById('spotSlider');
+    const simSpotVal = document.getElementById('simSpotVal');
+    const simResultBox = document.getElementById('simResultBox');
+
+    if (slider && simSpotVal && simResultBox) {
+      slider.addEventListener('input', function(e) {
+        const val = parseInt(e.target.value, 10);
+        simSpotVal.innerText = Number(val).toFixed(2);
+        
+        const newAtm = val;
+        const newMinus2 = val - 100;
+        const newPlus2 = val + 100;
+        const squeeze = val + 50;
+
+        simResultBox.innerHTML = `
+          <div class="text-on-surface-variant font-label-caps uppercase">PROJECTION ON SPOT BREACH:</div>
+          <div class="text-on-surface">New ATM: <strong class="text-tertiary font-bold">${newAtm} CE/PE</strong></div>
+          <div class="text-on-surface-variant">Calculated Shift Cluster: <span class="text-on-surface">${newMinus2} (New -2) → ${newPlus2} (New +2)</span></div>
+          <div class="text-primary font-semibold">Immediate Squeeze Target: ${squeeze} (+50 pts)</div>
+        `;
+      });
+    }
+
+    // 2. Refresh Button Interaction
+    const fetchBtn = document.getElementById('fetchBtn');
+    const syncTimer = document.getElementById('syncTimer');
+    let secondsAgo = 12;
+
+    if (fetchBtn && syncTimer) {
+      fetchBtn.addEventListener('click', function() {
+        const origText = fetchBtn.innerHTML;
+        fetchBtn.disabled = true;
+        fetchBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span><span>Scraping NSE...</span>';
+        
+        setTimeout(() => {
+          secondsAgo = 0;
+          syncTimer.innerText = 'Synced just now';
+          fetchBtn.disabled = false;
+          fetchBtn.innerHTML = origText;
+        }, 800);
+      });
+
+      // Update sync ticker timer every 5 seconds
+      setInterval(() => {
+        secondsAgo += 5;
+        if (secondsAgo < 60) {
+          syncTimer.innerText = `Synced ${secondsAgo}s ago`;
+        } else {
+          syncTimer.innerText = `Synced ${Math.floor(secondsAgo/60)}m ago`;
+        }
+      }, 5000);
+    }
+  })();
+</script></main></div>
+
+</body></html>
